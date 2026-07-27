@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check Ticket Availability
-        uses: mooyoul/melon-ticket-actions@v1.1.0
+        uses: mooyoul/melon-ticket-actions@v1.1.0[cite: 1]
         with:
           product-id: '213498'
-          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          schedule-id: '100001'
+          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}[cite: 1]
